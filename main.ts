@@ -16,7 +16,7 @@ export default class StatusBarQuote extends Plugin {
 		await this.loadSettings();
 
 		const statusBar = this.addStatusBarItem();
-		statusBar.createEl("span", { text: `${this.settings.quote} ✍️` });
+		statusBar.createEl("span", { text: `${this.settings.quote}` });
 
 		// TODO: Add ribbon icon that replace quote setting.
 		// const ribbonIconEl = this.addRibbonIcon('dice', 'Replace quote', (evt: MouseEvent) => {
